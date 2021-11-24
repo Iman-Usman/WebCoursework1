@@ -150,7 +150,10 @@
             <p>Subject: {{ lessons.subject }}</p>
             <p>Location: {{ lessons.location }}</p>
             <p>Price: ${{ lessons.price }}</p>
-          </div></div></div>
+            <button
+            v-on:click="deletefromCart(index)">
+            <i class="fa fa-trash"></i>
+          </button></div></div></div>
 
           <!--Sorting-->
           <div>
