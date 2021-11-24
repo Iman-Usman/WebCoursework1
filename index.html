@@ -178,6 +178,7 @@
             <div>
               <p><strong>{{ a.subject }}</strong></p>
               <p><strong>Price: </strong>${{ a.price }}</p>
+              <p>Location: {{ lessons.location }}</p>
               <p><strong>Spaces: </strong>{{ a.spaces }}</p><br />
 
               <button id="button" v-if="canAddToCart(a)"
