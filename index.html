@@ -135,8 +135,8 @@
             <div v-if="showProduct" id="checkoutpage">
                 <h2 style="font-size:30px; font-weight: bold; margin-bottom: 20px;"> Checkout </h2>
                 <p><form name="theform">
-                <strong style="font-size: 25px;">Name: </strong> <input type="text" onkeypress="return allowOnlyLetters(event,this);" id="name" required/>
-                <strong style="font-size: 25px;">Phone: </strong> <input type="text" onkeypress="return ValidNumeric()" id="phone" required/>
+                <strong style="font-size: 25px;">Name: </strong> <input type="text" onKeyup="checkform()" onkeypress="return allowOnlyLetters(event,this);" id="name" required/>
+                <strong style="font-size: 25px;">Phone: </strong> <input type="text" onKeyup="checkform()" onkeypress="return ValidNumeric()" id="phone" required/>
               <input id="checkoutbutton" type="submit" disabled="disabled" v-on:click="submitForm" value="submit" />
             </form>
                 </p>
