@@ -132,7 +132,7 @@
             <button id="checkoutdisabled" disabled = "disabled" v-else>                
                 <span class="fas fa-shopping-cart"></span> Checkout          
             </button>
-            <div id="checkoutpage">
+            <div v-if="showProduct" id="checkoutpage">
                 <h2 style="font-size:30px; font-weight: bold; margin-bottom: 20px;"> Checkout </h2>
                 <p><form name="theform">
                 <strong style="font-size: 25px;">Name: </strong> <input type="text" onkeypress="return allowOnlyLetters(event,this);" id="name" required/>
